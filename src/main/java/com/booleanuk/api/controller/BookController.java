@@ -38,12 +38,6 @@ public class BookController {
         return this.bookRepository.findAll();
     }
 
-    /*
-    @PostMapping
-    public ResponseEntity<Book> createBook(@RequestBody Book book){
-        return new ResponseEntity<Book>(this.repository.save(book), HttpStatus.CREATED);
-    }
-     */
 
     @PostMapping
     public ResponseEntity<Book> createBook(@RequestBody BookDTO bookDTO) {
